@@ -1,5 +1,6 @@
 
 ### 数据库
+[源码](数据库/客户.sql)
 ```mysql
 DROP TABLE IF EXISTS `演示`.`客户`;
 CREATE TABLE  `演示`.`客户` (
@@ -14,6 +15,7 @@ ADD INDEX `姓名_索引` (`姓名` ASC) ;
 ```
 
 ### Java
+[模型类](src/main/java/com/codeinchinese/客户/模型/客户类.java)
 ```java
 public class 客户类 implements java.io.Serializable {
 
@@ -60,6 +62,7 @@ public class 客户类 implements java.io.Serializable {
 
 }
 ```
+简单反射测试在[这里](src/test/java/com/codeinchinese/AppTest.java)
 
 ### 参考
 
