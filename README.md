@@ -1,7 +1,20 @@
-package com.codeinchinese.客户.模型;
 
-import java.util.Date;
+### 数据库
+```mysql
+DROP TABLE IF EXISTS `演示`.`客户`;
+CREATE TABLE  `演示`.`客户` (
+  `客户_ID` bigint(20) unsigned COLLATE utf8_unicode_ci NOT NULL AUTO_INCREMENT,
+  `姓名` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `创建日期` datetime COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`客户_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
 
+ALTER TABLE `演示`.`客户`
+ADD INDEX `姓名_索引` (`姓名` ASC) ;
+```
+
+### Java
+```java
 public class 客户类 implements java.io.Serializable {
 
   private Long 客户_ID;
@@ -46,3 +59,8 @@ public class 客户类 implements java.io.Serializable {
   }
 
 }
+```
+
+### 参考
+
+[Maven 3 + Hibernate 3.6 + Oracle 11g Example](https://www.mkyong.com/hibernate/maven-3-hibernate-3-6-oracle-11g-example-xml-mapping/)
