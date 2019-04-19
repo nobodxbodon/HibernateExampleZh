@@ -16,27 +16,27 @@ public class 客户类 implements java.io.Serializable {
       this.创建日期 = createdDate;
   }
 
-  public Long getCustomerId() {
+  public Long get客户Id() {
       return this.客户_ID;
   }
 
-  public void setCustomerId(Long customerId) {
+  public void set客户Id(Long customerId) {
       this.客户_ID = customerId;
   }
 
-  public String getName() {
+  public String get姓名() {
       return this.姓名;
   }
 
-  public void setName(String name) {
+  public void set姓名(String name) {
       this.姓名 = name;
   }
 
-  public Date getCreatedDate() {
+  public Date get创建日期() {
       return this.创建日期;
   }
 
-  public void setCreatedDate(Date createdDate) {
+  public void set创建日期(Date createdDate) {
       this.创建日期 = createdDate;
   }
 

@@ -15,9 +15,9 @@ public class App {
     session.beginTransaction();
     客户类 user = new 客户类();
 
-    user.setCustomerId(100L);
-    user.setName("小红");
-    user.setCreatedDate(new Date());
+    user.set客户Id(100L);
+    user.set姓名("小红");
+    user.set创建日期(new Date());
 
     session.save(user);
     session.getTransaction().commit();

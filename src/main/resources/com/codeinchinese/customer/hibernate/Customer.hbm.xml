@@ -4,14 +4,14 @@
 <!-- Generated 20 Julai 2010 11:40:18 AM by Hibernate Tools 3.2.5.Beta -->
 <hibernate-mapping>
     <class name="com.codeinchinese.客户.模型.客户类" table="客户">
-        <id name="customerId" type="java.lang.Long">
+        <id name="客户Id" type="java.lang.Long">
             <column name="客户_ID" />
             <generator class="assigned" />
         </id>
-        <property name="name" type="string">
+        <property name="姓名" type="string">
             <column name="姓名" length="45" not-null="true" />
         </property>
-        <property name="createdDate" type="timestamp">
+        <property name="创建日期" type="timestamp">
             <column name="创建日期" length="19" not-null="true" />
         </property>
     </class>
