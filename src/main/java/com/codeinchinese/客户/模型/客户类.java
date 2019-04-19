@@ -40,4 +40,9 @@ public class 客户类 implements java.io.Serializable {
       this.创建日期 = createdDate;
   }
 
+  @Override
+  public String toString() {
+    return 客户_ID + " " + 姓名 + " " + 创建日期;
+  }
+
 }
