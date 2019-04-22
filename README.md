@@ -1,6 +1,15 @@
+### 测试环境:
+- Windows 7 Pro 64bit, JDK 1.7.0_80, MySQL 5.5.62, Eclipse Kepler SR2
+- MacOS 10.13.6, JDK 1.8.0_45, MySQL 5.5.24, Eclipse 4.7.3a
+
+Hibernate 3.3.2.GA
+
+### 功能验证:
+运行`com.codeinchinese.App`, 插入一条记录并进行一次查询.
+简单反射Junit测试在[这里](src/test/java/com/codeinchinese/AppTest.java)
 
 ### 数据库
-[源码](数据库/客户.sql)
+[源码](数据库/客户.sql); 需修改`hibernate.cfg.xml`中的数据库用户/密码部分.
 ```mysql
 DROP TABLE IF EXISTS `演示`.`客户`;
 CREATE TABLE  `演示`.`客户` (
@@ -62,7 +71,6 @@ public class 客户类 implements java.io.Serializable {
 
 }
 ```
-简单反射测试在[这里](src/test/java/com/codeinchinese/AppTest.java)
 
 ### 参考
 
