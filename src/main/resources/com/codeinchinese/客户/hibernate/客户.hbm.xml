@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 20 Julai 2010 11:40:18 AM by Hibernate Tools 3.2.5.Beta -->
 <hibernate-mapping>
-    <class name="com.codeinchinese.客户.模型.客户类" table="客户">
+    <class name="com.codeinchinese.customer.model.Customer" table="客户">
         <id name="客户Id" type="java.lang.Long">
             <column name="客户_ID" />
             <generator class="identity" />

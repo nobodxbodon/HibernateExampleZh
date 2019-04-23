@@ -1,17 +1,17 @@
-package com.codeinchinese.客户.模型;
+package com.codeinchinese.customer.model;
 
 import java.util.Date;
 
-public class 客户类 implements java.io.Serializable {
+public class Customer implements java.io.Serializable {
 
   private Long 客户_ID;
   private String 姓名;
   private Date 创建日期;
 
-  public 客户类() {
+  public Customer() {
   }
 
-  public 客户类(String 姓名, Date 创建日期) {
+  public Customer(String 姓名, Date 创建日期) {
       this.姓名 = 姓名;
       this.创建日期 = 创建日期;
   }

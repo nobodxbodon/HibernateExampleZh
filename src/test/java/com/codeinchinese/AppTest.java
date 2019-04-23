@@ -7,7 +7,7 @@ import java.util.Date;
 
 import org.junit.Test;
 
-import com.codeinchinese.客户.模型.客户类;
+import com.codeinchinese.customer.model.Customer;
 
 /**
  * Unit test for simple App.
@@ -16,9 +16,9 @@ public class AppTest {
 
   @Test
   public void 反射() {
-    客户类 客户 = new 客户类("小明", new Date());
+    Customer 客户 = new Customer("小明", new Date());
     try {
-      assertEquals("小明", 客户类.class.getMethod("get姓名").invoke(客户));
+      assertEquals("小明", Customer.class.getMethod("get姓名").invoke(客户));
     } catch (IllegalAccessException e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
