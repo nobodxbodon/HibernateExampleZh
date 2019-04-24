@@ -1,3 +1,5 @@
+详见: [中文命名之Hibernate+MySQL演示](https://zhuanlan.zhihu.com/p/63518209)
+
 ### 测试环境:
 - Windows 7 Pro 64bit, JDK 1.7.0_80, MySQL 5.5.62, Eclipse Kepler SR2
 - MacOS 10.13.6, JDK 1.8.0_45, MySQL 5.5.24, Eclipse 4.7.3a
