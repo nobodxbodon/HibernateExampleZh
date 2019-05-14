@@ -28,6 +28,8 @@ ADD INDEX `姓名_索引` (`姓名` ASC) ;
 ### Java
 [模型类](src/main/java/com/codeinchinese/客户/模型/客户类.java)
 ```java
+@Entity
+@Table(name="客户")
 public class 客户类 implements java.io.Serializable {
 
   private Long 客户_ID;
@@ -42,6 +44,9 @@ public class 客户类 implements java.io.Serializable {
       this.创建日期 = 创建日期;
   }
 
+  @Id
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
+  @Column(name = "客户_ID", length=20)
   public Long get客户Id() {
       return this.客户_ID;
   }
@@ -50,6 +55,7 @@ public class 客户类 implements java.io.Serializable {
       this.客户_ID = 客户Id;
   }
 
+  @Column(name = "姓名", nullable = false, length=45)
   public String get姓名() {
       return this.姓名;
   }
@@ -58,6 +64,7 @@ public class 客户类 implements java.io.Serializable {
       this.姓名 = 姓名;
   }
 
+  @Column(name = "创建日期", nullable = false, length=19)
   public Date get创建日期() {
       return this.创建日期;
   }
