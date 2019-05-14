@@ -28,5 +28,6 @@ public class App {
     for (Object o : list) {
       System.out.println(o);
     }
+    会话.close();
   }
 }

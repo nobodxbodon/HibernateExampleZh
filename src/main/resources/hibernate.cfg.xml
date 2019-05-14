@@ -15,6 +15,6 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 		<property name="use_sql_comments">false</property>
-		<mapping resource="com/codeinchinese/客户/hibernate/客户.hbm.xml" />
+		<mapping class="com.codeinchinese.客户.模型.客户类"></mapping>
 	</session-factory>
 </hibernate-configuration>
